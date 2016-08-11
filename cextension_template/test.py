@@ -36,3 +36,24 @@ class TestExample(unittest.TestCase):
         value = -1035
         arr[index] = value
         self.assertEqual(arr[index], value, "check value []");
+
+    def testIndexError(self):
+
+        size=100
+        arr=example.IntArray(size)
+
+        try:
+            arr[size*2] = 25
+            ok=True
+        except IndexError:
+            ok=False
+
+        self.assertFalse(ok,"out of bounds high check")
+
+        try:
+            arr[-10] = 25
+            ok=True
+        except IndexError:
+            ok=False
+
+        self.assertFalse(ok,"out of bounds low check")
