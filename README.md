@@ -1,9 +1,12 @@
 # cextension_template
+
 Full python C extension template
 
-The code is valid python 2 and python 3
+Impement a python class at the C level with methods.  Implement
+module level functions.
 
-Includes an example unit test as well
+The code is valid python 2 and python 3. Includes an example unit test as well
+
 
 ```python
 import cextension_template

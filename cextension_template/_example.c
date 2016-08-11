@@ -5,9 +5,16 @@
    Implement a nontrivial python class representing an array
    of integers.
 
+       1 constructor takes the array size
+       2 set method sets an array element
+       3 get method gets an array element
+
    Implement module level functions.
 
-   be python2 and python3 compatible
+       not tied to the class
+
+   python2 and python3 compatible
+
 */
 
 #include <string.h>
